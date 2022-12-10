@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoraCodingTaskWebSocket",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{E12A9CB2-1224-4AFE-BBFB-B0EE1E9024A5}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\Documents\MarySykes_Algora_CodingTask.docx = ..\..\..\Documents\MarySykes_Algora_CodingTask.docx
+		Docs\MarySykes_Algora_CodingTask.docx = Docs\MarySykes_Algora_CodingTask.docx
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8DFF9C0-D3E2-44EB-9936-C0242EA5D977}"
