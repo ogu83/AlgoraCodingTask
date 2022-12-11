@@ -23,3 +23,6 @@ The columns should be formatted, as above.
 2. Client should only subscribe with a ticker i.e. Stock1, and the service will keep publishing prices for that ticker for as long as it is subscribed.
 3. Service module will act as a provider and publish prices based on the price logic to the client.
 4. Design the project in such a way that the client module can use different implementations of Service module without changing the client code (loading during runtime).
+
+### How to Run
+

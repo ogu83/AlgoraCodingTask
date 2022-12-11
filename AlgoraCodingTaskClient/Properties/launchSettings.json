@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AlgoraCodingTaskClient": {
+      "commandName": "Project",
+      "commandLineArgs": "ws://localhost:5000/ticker"
+    }
+  }
+}

@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AlgoraCodingTaskClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        FontSize="14"
+        Title="Algora Coding Task WPF Client" Height="450" Width="800">
+    <StackPanel x:Name="stkMain" Orientation="Vertical">
+        <StackPanel x:Name="stkButtons" Orientation="Horizontal">
+            <Button Margin="5" Padding="5" x:Name="btnConnect" Click="btnConnect_Click" IsEnabled="{Binding NotConnected}">Connect</Button>
+            <Button Margin="5" Padding="5" x:Name="btnDisconnect" Click="btnDisconnect_Click" IsEnabled="{Binding Connected}">Disconnect</Button>
+        </StackPanel>
+        <StackPanel x:Name="stkContent">
+            <DataGrid x:Name="gridPrices" DataContext="{Binding Stocks}" ItemsSource="{Binding Items}" AutoGenerateColumns="False" MouseDoubleClick="gridPrices_MouseDoubleClick">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Name">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Margin="5" Padding="5" Text="{Binding Path=Name}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Price">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Margin="5" Padding="5" Text="{Binding Path=PriceStr}" Background="{Binding Path=PriceColor}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </StackPanel>
 </Window>
